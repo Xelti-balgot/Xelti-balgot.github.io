@@ -12,7 +12,8 @@
 
     
     
-    <form onsubmit="return false" id="example1" oninput="result.value = Number(overall.value) - Number(thickness.value) / 2;">
+    <form onsubmit="return false" id="example2" oninput="result.value = Number(overall.value) - Number(thickness.value) / 2;">
+    <form onsubmit="return false" id="example3" oninput="result.value = Number(overall.value) - Number(thickness.value) / 3;">
     
       <p><label for="overall">全体の長さ:</label>
       <input type="number" id="overall" name="overall" min="1" max="300" /></p>
@@ -20,8 +21,8 @@
       <input type="number" id="thickness" name="thickness" min="1" max="30" /></p>
       
       </form>
-      <p>計算結果：<output name="result" form="example2">0</output></p>
-
+      <p><output name="result" form="example2">0</output></p>
+      <p><output name="result" form="example3">0</output></p>
 
       
   </body>
