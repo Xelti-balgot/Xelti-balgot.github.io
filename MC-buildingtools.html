@@ -14,8 +14,10 @@
     
     <form onsubmit="return false" id="example" oninput="result.value = Number(overall.value) + Number(thickness.value);">
     
-    
-      <input type="number" id="overall" name="overall" min="1" max="300" /></p> + <input type="number" id="thickness" name="thickness" min="1" max="30" /></p>
+      <p><label for="overall">全体の長さ:</label>
+      <input type="number" id="overall" name="overall" min="1" max="300" /></p>
+      <p><label for="thickness">柱の厚さ:</label>
+      <input type="number" id="thickness" name="thickness" min="1" max="30" /></p>
       
       </form>
       <p>計算結果：<output name="result" form="example">0</output></p>
